@@ -1,0 +1,60 @@
+How to install git:
+Official website : git-scm.com
+
+command : # apt-get install git -y
+
+check git version : $ git --version
+
+
+Setup GitHub account:
+
+official website: https://github.com
+
+SignUP in get and get verified with your email.
+
+SignIn your github account.
+
+Start new repository and give name and description(optional).
+
+Choose between 
+public : anyone can see this repo.you can choose who commits
+private : you choose who can see and commit to this repo
+
+Initialize repo with a  README and add license.
+
+Create repository.
+
+
+Connect git and github
+
+ -->Configure our git to work with github
+
+$git config --global user.name "Your User Name"
+$git config --global user.email "Email address of your Github"
+$git config --list  //list configuration of our git
+// Check where config are saved
+$ ls -al
+$ gedit .gitconfig //Opens file in editor and config of git account
+//To clone the repo
+$git clone "Url from you github account repo"
+
+
+Commit new versions git and finall to github:
+//Check the status of your project/repo
+$git status //some filename shows up in red in project is updated
+$git add "filename from status" //add files to git
+//Again check git status if your see that filename in green then that file is part of your git project
+//Commit your file to repo with some message
+$git commit -m "Some useful msg related to changes in project"
+ "filename"
+
+
+//to push file to github as well
+$git push -u origin master
+Username:
+Password:
+
+//Finally all the files get transferred to github repocd
+
+
+
